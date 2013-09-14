@@ -19,7 +19,7 @@ namespace NewsBlog.Services.Controllers
 
         public CommentsController()
         {
-            DbContext dbContext = new NewsBlogEntities();
+            DbContext dbContext = new BlogSystemEntities();
             this.commentsRepository = new CommentsRepository(dbContext);
         }
 

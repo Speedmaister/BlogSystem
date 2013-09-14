@@ -10,7 +10,7 @@ namespace NewsBlog.Repository
 {
     public class UserRepository : Repository<User>
     {
-        public UserRepository(NewsBlogEntities context)
+        public UserRepository(BlogSystemEntities context)
             : base(context)
         {
         }

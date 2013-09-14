@@ -37,16 +37,3 @@ E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Service
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\System.Web.WebPages.Razor.xml
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\obj\Debug\NewsBlog.Services.dll
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\obj\Debug\NewsBlog.Services.pdb
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\NewsBlog.Notifications.dll
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\NewsBlog.Notifications.pdb
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Dropbox.dll
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Social.Dropbox.dll
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Social.Core.dll
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Rest.dll
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Dropbox.pdb
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Social.Dropbox.pdb
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Social.Dropbox.xml
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Social.Core.pdb
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Social.Core.xml
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Rest.pdb
-E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\Spring.Rest.xml

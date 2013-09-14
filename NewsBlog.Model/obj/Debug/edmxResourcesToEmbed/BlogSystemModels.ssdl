@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db09a4acd973cf4f99811ba239008d873dModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="db09a4acd973cf4f99811ba239008d873dModelStoreContainer">
+    <EntitySet Name="Articles" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Store.Articles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comments" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Store.Comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Images" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Store.Images" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SubComments" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Store.SubComments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Votes" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Store.Votes" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Articles_Users" Association="db09a4acd973cf4f99811ba239008d873dModel.Store.FK_Articles_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Articles" Association="db09a4acd973cf4f99811ba239008d873dModel.Store.FK_Comments_Articles">
+      <End Role="Articles" EntitySet="Articles" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Users" Association="db09a4acd973cf4f99811ba239008d873dModel.Store.FK_Comments_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Images_Articles" Association="db09a4acd973cf4f99811ba239008d873dModel.Store.FK_Images_Articles">
+      <End Role="Articles" EntitySet="Articles" />
+      <End Role="Images" EntitySet="Images" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubComments_Comments" Association="db09a4acd973cf4f99811ba239008d873dModel.Store.FK_SubComments_Comments">
+      <End Role="Comments" EntitySet="Comments" />
+      <End Role="SubComments" EntitySet="SubComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubComments_Users" Association="db09a4acd973cf4f99811ba239008d873dModel.Store.FK_SubComments_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SubComments" EntitySet="SubComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Votes_Articles" Association="db09a4acd973cf4f99811ba239008d873dModel.Store.FK_Votes_Articles">
+      <End Role="Articles" EntitySet="Articles" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Votes_Users" Association="db09a4acd973cf4f99811ba239008d873dModel.Store.FK_Votes_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Articles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="ArticleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Images">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ArticleId" Type="int" Nullable="false" />
+    <Property Name="Image" Type="image" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubComments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ParentComment" Type="int" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SessionKey" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Votes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+    <Property Name="ArticleId" Type="int" Nullable="false" />
+    <Property Name="Value" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Articles_Users">
+    <End Role="Users" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Users" Multiplicity="1" />
+    <End Role="Articles" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Articles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Articles">
+    <End Role="Articles" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Articles" Multiplicity="1" />
+    <End Role="Comments" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Users">
+    <End Role="Users" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Users" Multiplicity="1" />
+    <End Role="Comments" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Images_Articles">
+    <End Role="Articles" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Articles" Multiplicity="1" />
+    <End Role="Images" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Images" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Images">
+        <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubComments_Comments">
+    <End Role="Comments" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Comments" Multiplicity="1" />
+    <End Role="SubComments" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.SubComments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comments">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubComments">
+        <PropertyRef Name="ParentComment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubComments_Users">
+    <End Role="Users" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Users" Multiplicity="1" />
+    <End Role="SubComments" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.SubComments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubComments">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Votes_Articles">
+    <End Role="Articles" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Articles" Multiplicity="1" />
+    <End Role="Votes" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Votes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="ArticleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Votes_Users">
+    <End Role="Users" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Users" Multiplicity="1" />
+    <End Role="Votes" Type="db09a4acd973cf4f99811ba239008d873dModel.Store.Votes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

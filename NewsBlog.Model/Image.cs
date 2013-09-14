@@ -16,7 +16,7 @@ namespace NewsBlog.Model
     {
         public int Id { get; set; }
         public int ArticleId { get; set; }
-        public string Url { get; set; }
+        public byte[] Image1 { get; set; }
     
         public virtual Article Article { get; set; }
     }

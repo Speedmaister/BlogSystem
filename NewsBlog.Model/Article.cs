@@ -17,8 +17,8 @@ namespace NewsBlog.Model
         public Article()
         {
             this.Comments = new HashSet<Comment>();
-            this.Votes = new HashSet<Vote>();
             this.Images = new HashSet<Image>();
+            this.Votes = new HashSet<Vote>();
         }
     
         public int Id { get; set; }
@@ -29,7 +29,7 @@ namespace NewsBlog.Model
     
         public virtual User User { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
-        public virtual ICollection<Vote> Votes { get; set; }
         public virtual ICollection<Image> Images { get; set; }
+        public virtual ICollection<Vote> Votes { get; set; }
     }
 }

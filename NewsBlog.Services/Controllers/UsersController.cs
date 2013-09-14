@@ -1,5 +1,4 @@
 ﻿using NewsBlog.Model;
-using NewsBlog.Notifications;
 using NewsBlog.Repository;
 using NewsBlog.Services.Models;
 using NewsBlog.Services.Persisters;
@@ -15,12 +14,12 @@ namespace NewsBlog.Services.Controllers
 {
     public class UsersController : ApiController
     {
-        private NewsBlogEntities context;
+        private BlogSystemEntities context;
         private IRepository<User> repository;
 
         public UsersController()
         {
-            this.context = new NewsBlogEntities();
+            this.context = new BlogSystemEntities();
             this.repository = new Repository<User>(this.context);
         }
 

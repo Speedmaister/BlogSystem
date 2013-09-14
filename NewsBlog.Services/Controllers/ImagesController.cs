@@ -13,7 +13,7 @@ namespace NewsBlog.Services.Controllers
 {
     public class ImagesController : ApiController
     {
-        private NewsBlogEntities context = new NewsBlogEntities();
+        private BlogSystemEntities context = new BlogSystemEntities();
 
         private IRepository<Image> repository;
 
@@ -43,7 +43,7 @@ namespace NewsBlog.Services.Controllers
             {
                 var entityToAdd = new Image()
                 {
-                    Url = image.Url,
+                    Image1 = image.Image1,
                     ArticleId = image.ArticleId
                 };
 

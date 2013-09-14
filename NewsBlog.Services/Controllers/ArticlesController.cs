@@ -8,19 +8,17 @@ using NewsBlog.Model;
 using NewsBlog.Repository;
 using NewsBlog.Services.Models;
 using NewsBlog.Services.Persisters;
-using NewsBlog.Notifications;
-using AccessinImagesViaDropbox;
 
 namespace NewsBlog.Services.Controllers
 {
     public class ArticlesController : ApiController
     {
-        private NewsBlogEntities context;
+        private BlogSystemEntities context;
         private IRepository<Article> repository;
 
         public ArticlesController()
         {
-            this.context = new NewsBlogEntities();
+            this.context = new BlogSystemEntities();
             this.repository = new Repository<Article>(this.context);
         }
 
@@ -99,10 +97,10 @@ namespace NewsBlog.Services.Controllers
             article.Content = value.Content;
             article.Date = DateTime.Now;
             article.AuthorId = articleAuthor.Id;
-            article.Images = new Image
+            article.Images.Add(new Image
             {
-                    Image=value.ArticleImage
-            }
+                Image1 = value.ArticleImage
+            });
 
             this.repository.Add(article);
 

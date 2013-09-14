@@ -10,13 +10,13 @@ namespace NewsBlog.Services.Models
     {
         public int Id { get; set; }
         public int ArticleId { get; set; }
-        public string Url { get; set; }
+        public byte[] Image { get; set; }
 
         public ImageModel(Image image)
         {
             Id = image.Id;
             ArticleId = image.ArticleId;
-            Url = image.Url;
+            Image = image.Image1;
         }
     }
 }

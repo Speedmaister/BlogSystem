@@ -14,7 +14,7 @@ namespace NewsBlog.Services.Persisters
         private static readonly string sessionKeyChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         private const int SessionKeyLength = 40;
 
-        private static NewsBlogEntities context = new NewsBlogEntities();
+        private static BlogSystemEntities context = new BlogSystemEntities();
         private static UserRepository repository = new UserRepository(context);
         private static Random rand = new Random();
 

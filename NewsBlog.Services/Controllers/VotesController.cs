@@ -15,7 +15,7 @@ namespace NewsBlog.Services.Controllers
 {
     public class VotesController : ApiController
     {
-        private NewsBlogEntities context = new NewsBlogEntities();
+        private BlogSystemEntities context = new BlogSystemEntities();
 
         private IRepository<Vote> repository;
 
