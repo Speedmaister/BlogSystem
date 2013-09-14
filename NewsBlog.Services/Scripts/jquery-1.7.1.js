@@ -266,7 +266,8 @@ jQuery.fn = jQuery.prototype = {
 
 	// Execute a callback for every element in the matched set.
 	// (You can seed the arguments with an array of args, but this is
-	// only used internally.)
+	// only used 
+ly.)
 	each: function( callback, args ) {
 		return jQuery.each( this, callback, args );
 	},

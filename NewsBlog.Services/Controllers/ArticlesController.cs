@@ -31,6 +31,7 @@ namespace NewsBlog.Services.Controllers
         [ActionName("all")]
         public IEnumerable<ArticleDetails> GetAllArticles()
         {
+
             var data = this.repository.All();
 
             List<ArticleDetails> articles = new List<ArticleDetails>();
@@ -49,16 +50,24 @@ namespace NewsBlog.Services.Controllers
         [ActionName("singleArticle")]
         public HttpResponseMessage GetArticle(int id)
         {
-            var article = this.repository.All().Where(x => x.Id == id).FirstOrDefault();
 
-            if (article == null)
+            try
             {
-                return this.Request.CreateErrorResponse(HttpStatusCode.NotFound, "Item not found!");
+                var article = this.repository.All().Where(x => x.Id == id).FirstOrDefault();
+
+                if (article == null)
+                {
+                    return this.Request.CreateErrorResponse(HttpStatusCode.NotFound, "Item not found!");
+                }
+
+                var articleModel = new ArticleDetails(article);
+
+                return this.Request.CreateResponse(HttpStatusCode.OK, articleModel);
             }
-
-            var articleModel = new ArticleDetails(article);
-
-            return this.Request.CreateResponse(HttpStatusCode.OK, articleModel);
+            catch (Exception ex)
+            {
+                return this.Request.CreateResponse(HttpStatusCode.OK,"Error is from articles. " + ex.Message);
+            }
         }
 
         [HttpPost]
