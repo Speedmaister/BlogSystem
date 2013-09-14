@@ -6,3 +6,11 @@ E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Model\b
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Model\obj\Debug\NewsBlog.Model.csprojResolveAssemblyReference.cache
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Model\obj\Debug\NewsBlog.Model.dll
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Model\obj\Debug\NewsBlog.Model.pdb
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Model\bin\Debug\NewsBlog.Model.dll.config
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Model\bin\Debug\NewsBlog.Model.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Model\bin\Debug\NewsBlog.Model.pdb
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Model\bin\Debug\EntityFramework.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Model\bin\Debug\EntityFramework.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Model\obj\Debug\NewsBlog.Model.csprojResolveAssemblyReference.cache
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Model\obj\Debug\NewsBlog.Model.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Model\obj\Debug\NewsBlog.Model.pdb

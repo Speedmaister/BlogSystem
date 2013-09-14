@@ -37,3 +37,42 @@ E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Service
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\bin\System.Web.WebPages.Razor.xml
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\obj\Debug\NewsBlog.Services.dll
 E:\Dropbox\Telerik\7-ma Chast\TeamWork\newsblog\NewsBlogProject\NewsBlog.Services\obj\Debug\NewsBlog.Services.pdb
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\NewsBlog.Services.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\NewsBlog.Services.pdb
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\Antlr3.Runtime.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\Common.Logging.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\EntityFramework.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\NewsBlog.Model.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\NewsBlog.Repository.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\Newtonsoft.Json.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Cors.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Helpers.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Http.Cors.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Http.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Mvc.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Optimization.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Providers.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Razor.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.WebPages.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\WebGrease.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\NewsBlog.Model.pdb
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\NewsBlog.Repository.pdb
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\Newtonsoft.Json.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Http.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Http.WebHost.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\EntityFramework.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Helpers.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Mvc.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.Razor.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.WebPages.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\obj\Debug\NewsBlog.Services.csprojResolveAssemblyReference.cache
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\obj\Debug\NewsBlog.Services.dll
+C:\Users\Rado_\Documents\GitHub\BlogSystem\NewsBlog.Services\obj\Debug\NewsBlog.Services.pdb
