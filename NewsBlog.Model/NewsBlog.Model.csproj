@@ -89,11 +89,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="BlogSystemModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BlogSystemModels.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="App.Config" />
     <None Include="BlogSystemModels.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BlogSystemModels.edmx</DependentUpon>

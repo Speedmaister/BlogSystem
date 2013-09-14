@@ -51,8 +51,13 @@ namespace NewsBlog.Services.Controllers
         public HttpResponseMessage GetArticle(int id)
         {
 
+<<<<<<< HEAD
+            //try
+            //{
+=======
             try
             {
+>>>>>>> 504a8ef2010268a7809c9f50194607fafdf7831f
                 var article = this.repository.All().Where(x => x.Id == id).FirstOrDefault();
 
                 if (article == null)
@@ -63,11 +68,19 @@ namespace NewsBlog.Services.Controllers
                 var articleModel = new ArticleDetails(article);
 
                 return this.Request.CreateResponse(HttpStatusCode.OK, articleModel);
+<<<<<<< HEAD
+            //}
+            //catch (Exception ex)
+            //{
+            //    return this.Request.CreateResponse(HttpStatusCode.OK,"Error is from articles. " + ex.Message);
+            //}
+=======
             }
             catch (Exception ex)
             {
                 return this.Request.CreateResponse(HttpStatusCode.OK,"Error is from articles. " + ex.Message);
             }
+>>>>>>> 504a8ef2010268a7809c9f50194607fafdf7831f
         }
 
         [HttpPost]
