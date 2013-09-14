@@ -89,7 +89,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="BlogSystemModels.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BlogSystemModels.Designer.cs</LastGenOutput>
