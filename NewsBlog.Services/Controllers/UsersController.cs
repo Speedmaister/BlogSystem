@@ -14,12 +14,12 @@ namespace NewsBlog.Services.Controllers
 {
     public class UsersController : ApiController
     {
-        private BlogSystemEntities context;
+        private db09a4acd973cf4f99811ba239008d873dEntities context;
         private IRepository<User> repository;
 
         public UsersController()
         {
-            this.context = new BlogSystemEntities();
+            this.context = new db09a4acd973cf4f99811ba239008d873dEntities();
             this.repository = new Repository<User>(this.context);
         }
 

@@ -13,7 +13,7 @@ namespace NewsBlog.Services.Controllers
 {
     public class ImagesController : ApiController
     {
-        private BlogSystemEntities context = new BlogSystemEntities();
+        private db09a4acd973cf4f99811ba239008d873dEntities context = new db09a4acd973cf4f99811ba239008d873dEntities();
 
         private IRepository<Image> repository;
 

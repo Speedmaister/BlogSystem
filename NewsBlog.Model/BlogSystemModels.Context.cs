@@ -13,10 +13,10 @@ namespace NewsBlog.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BlogSystemEntities : DbContext
+    public partial class db09a4acd973cf4f99811ba239008d873dEntities : DbContext
     {
-        public BlogSystemEntities()
-            : base("name=BlogSystemEntities")
+        public db09a4acd973cf4f99811ba239008d873dEntities()
+            : base("name=db09a4acd973cf4f99811ba239008d873dEntities")
         {
         }
     

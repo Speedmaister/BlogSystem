@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="db09a4acd973cf4f99811ba239008d873dModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityContainer Name="BlogSystemEntities" p1:LazyLoadingEnabled="true">
+  <EntityContainer Name="db09a4acd973cf4f99811ba239008d873dEntities" p1:LazyLoadingEnabled="true">
     <EntitySet Name="Articles" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Article" />
     <EntitySet Name="Comments" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Comment" />
     <EntitySet Name="Images" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Image" />

@@ -19,7 +19,7 @@ namespace NewsBlog.Services.Controllers
 
         public SubCommentsController()
         {
-            DbContext dbContext = new BlogSystemEntities();
+            DbContext dbContext = new db09a4acd973cf4f99811ba239008d873dEntities();
             this.subCommentsRepository = new Repository<SubComment>(dbContext);
         }
 

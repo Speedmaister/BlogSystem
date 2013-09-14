@@ -202,7 +202,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="db09a4acd973cf4f99811ba239008d873dModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="BlogSystemEntities" p1:LazyLoadingEnabled="true">
+        <EntityContainer Name="db09a4acd973cf4f99811ba239008d873dEntities" p1:LazyLoadingEnabled="true">
           <EntitySet Name="Articles" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Article" />
           <EntitySet Name="Comments" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Comment" />
           <EntitySet Name="Images" EntityType="db09a4acd973cf4f99811ba239008d873dModel.Image" />
@@ -415,7 +415,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="db09a4acd973cf4f99811ba239008d873dModelStoreContainer" CdmEntityContainer="BlogSystemEntities">
+        <EntityContainerMapping StorageEntityContainer="db09a4acd973cf4f99811ba239008d873dModelStoreContainer" CdmEntityContainer="db09a4acd973cf4f99811ba239008d873dEntities">
           <EntitySetMapping Name="Articles">
             <EntityTypeMapping TypeName="db09a4acd973cf4f99811ba239008d873dModel.Article">
               <MappingFragment StoreEntitySet="Articles">
