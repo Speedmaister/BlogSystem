@@ -47,11 +47,6 @@ namespace BlogSystem.Services.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Can't send comment with no author name.");
             }
 
-            if (comment.Date == null)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Can't send comment with no date.");
-            }
-
             var isValidSessionKey = UserPersister.ValidateSessionKey(sessionKey);
             if (!isValidSessionKey)
             {
@@ -72,7 +67,7 @@ namespace BlogSystem.Services.Controllers
             var newComment = new SubComment();
             newComment.AuthorId = user.Id;
             newComment.Content = comment.Content;
-            newComment.Date = comment.Date;
+            newComment.Date = DateTime.Now;
             newComment.ParentComment = comment.ParentCommentId;
 
             return newComment;
