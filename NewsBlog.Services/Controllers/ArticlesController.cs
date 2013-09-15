@@ -4,12 +4,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using NewsBlog.Model;
-using NewsBlog.Repository;
-using NewsBlog.Services.Models;
-using NewsBlog.Services.Persisters;
+using BlogSystem.Model;
+using BlogSystem.Repository;
+using BlogSystem.Services.Models;
+using BlogSystem.Services.Persisters;
 
-namespace NewsBlog.Services.Controllers
+namespace BlogSystem.Services.Controllers
 {
     public class ArticlesController : ApiController
     {

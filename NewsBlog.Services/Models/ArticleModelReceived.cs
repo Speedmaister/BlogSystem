@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Web;
 
-namespace NewsBlog.Services.Models
+namespace BlogSystem.Services.Models
 {
     public class ArticleModelReceived : ArticleModel
     {

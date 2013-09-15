@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewsBlog.Repository
+namespace BlogSystem.Repository
 {
     public interface IRepository<T>
     {

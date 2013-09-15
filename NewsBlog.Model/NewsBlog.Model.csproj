@@ -7,7 +7,7 @@
     <ProjectGuid>{F175A322-5E6C-4FDE-A2D9-E98196FA02DA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NewsBlog.Model</RootNamespace>
+    <RootNamespace>BlogSystem.Model</RootNamespace>
     <AssemblyName>NewsBlog.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace NewsBlog.Services.Controllers
+namespace BlogSystem.Services.Controllers
 {
     public class HomeController : Controller
     {

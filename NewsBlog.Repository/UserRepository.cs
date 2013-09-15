@@ -1,4 +1,4 @@
-﻿using NewsBlog.Model;
+﻿using BlogSystem.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewsBlog.Repository
+namespace BlogSystem.Repository
 {
     public class UserRepository : Repository<User>
     {

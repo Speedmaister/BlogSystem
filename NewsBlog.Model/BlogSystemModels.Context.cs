@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NewsBlog.Model
+namespace BlogSystem.Model
 {
     using System;
     using System.Data.Entity;

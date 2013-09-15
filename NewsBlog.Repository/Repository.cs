@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewsBlog.Repository
+namespace BlogSystem.Repository
 {
     public class Repository<T>: IRepository<T> where T: class
     {

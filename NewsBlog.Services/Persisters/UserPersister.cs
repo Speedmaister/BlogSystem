@@ -1,5 +1,5 @@
-﻿using NewsBlog.Model;
-using NewsBlog.Repository;
+﻿using BlogSystem.Model;
+using BlogSystem.Repository;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-namespace NewsBlog.Services.Persisters
+namespace BlogSystem.Services.Persisters
 {
     public class UserPersister
     {
