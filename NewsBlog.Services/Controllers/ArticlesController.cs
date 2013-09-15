@@ -128,5 +128,58 @@ namespace NewsBlog.Services.Controllers
             this.repository.Delete(article.Id);
             return this.Request.CreateResponse(HttpStatusCode.OK);
         }
+
+        [HttpPost]
+        [ActionName("Update")]
+        public HttpResponseMessage DeleteArticle(string sessionKey, [FromBody]ArticleModelReceived value)
+        {
+            bool isValid = UserPersister.ValidateSessionKey(sessionKey);
+            if (!isValid)
+            {
+                return this.Request.CreateErrorResponse(HttpStatusCode.Unauthorized, "Invalid session key");
+            }
+
+            if (value == null)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Can't send null article.");
+            }
+
+            if (string.IsNullOrWhiteSpace(value.Title))
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Can't send empty or whitespace Title.");
+            }
+
+            if (string.IsNullOrWhiteSpace(value.Content))
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Can't send empty or whitespace Content.");
+            }
+
+            if (value.Id < 1)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Can't send article Id less than 1.");
+            }
+
+            var article = this.repository.All().Where(x => x.User.SessionKey == sessionKey && x.Id == value.Id).FirstOrDefault();
+
+            if (article == null)
+            {
+                return this.Request.CreateErrorResponse(HttpStatusCode.Unauthorized, "You can update only your articles!");
+            }
+
+            article.Title = value.Title;
+            article.Content = value.Content;
+            article.Date = DateTime.Now;
+            if (value.ArticleImage != null)
+            {
+                article.Images.Clear();
+                article.Images.Add(new Image
+                {
+                    Image1 = value.ArticleImage
+                });
+            }
+
+            this.repository.Update(article.Id, article);
+            return this.Request.CreateResponse(HttpStatusCode.OK);
+        }
     }
 }
