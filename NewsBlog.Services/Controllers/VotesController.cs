@@ -27,14 +27,15 @@ namespace BlogSystem.Services.Controllers
          //POST api/votes/5
         [HttpPost]
         [ActionName("create")]
-        public HttpResponseMessage CreateVote(string sessionKey, Vote vote)
+        public HttpResponseMessage CreateVote(string sessionKey, VoteModel vote)
         {
             bool result = UserPersister.ValidateSessionKey(sessionKey);
                         
             if (result == true)
             {
+                var user = UserPersister.GetUser(vote.Author);
                 var voteFound = this.repository.All().
-                    Where(x => x.ArticleId == vote.ArticleId && x.AuthorId == vote.AuthorId).FirstOrDefault();
+                    Where(x => x.ArticleId == vote.ArticleId && x.User.Equals(user)).FirstOrDefault();
 
                 if(voteFound != null)
                 {
@@ -44,7 +45,7 @@ namespace BlogSystem.Services.Controllers
                 var entityToAdd = new Vote()
                 {
                     ArticleId=vote.ArticleId,
-                    AuthorId = vote.AuthorId,
+                    User = user,
                     Value = vote.Value
                 };
 

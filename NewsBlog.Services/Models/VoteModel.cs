@@ -14,6 +14,10 @@ namespace BlogSystem.Services.Models
         public int ArticleId { get; set; }
         public bool Value { get; set; }
 
+        public VoteModel()
+        {
+        }
+
         public VoteModel(Vote vote)
         {
             Id = vote.Id;
