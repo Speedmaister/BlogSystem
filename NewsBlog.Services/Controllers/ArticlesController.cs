@@ -131,7 +131,7 @@ namespace BlogSystem.Services.Controllers
 
         [HttpPost]
         [ActionName("Update")]
-        public HttpResponseMessage DeleteArticle(string sessionKey, [FromBody]ArticleModelReceived value)
+        public HttpResponseMessage UpdateArticle(string sessionKey, [FromBody]ArticleModelReceived value)
         {
             bool isValid = UserPersister.ValidateSessionKey(sessionKey);
             if (!isValid)
@@ -171,11 +171,10 @@ namespace BlogSystem.Services.Controllers
             article.Date = DateTime.Now;
             if (value.ArticleImage != null)
             {
-                article.Images.Clear();
-                article.Images.Add(new Image
+                foreach (var image in article.Images)
                 {
-                    Image1 = value.ArticleImage
-                });
+                    image.Image1 = value.ArticleImage;
+                }
             }
 
             this.repository.Update(article.Id, article);
