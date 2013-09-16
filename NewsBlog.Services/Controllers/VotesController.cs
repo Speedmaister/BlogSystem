@@ -35,7 +35,7 @@ namespace BlogSystem.Services.Controllers
             {
                 var user = UserPersister.GetUser(vote.Author);
                 var voteFound = this.repository.All().
-                    Where(x => x.ArticleId == vote.ArticleId && x.User.Equals(user)).FirstOrDefault();
+                    Where(x => x.ArticleId == vote.ArticleId && x.AuthorId==user.Id).FirstOrDefault();
 
                 if(voteFound != null)
                 {
@@ -45,7 +45,7 @@ namespace BlogSystem.Services.Controllers
                 var entityToAdd = new Vote()
                 {
                     ArticleId=vote.ArticleId,
-                    User = user,
+                    AuthorId = user.Id,
                     Value = vote.Value
                 };
 
